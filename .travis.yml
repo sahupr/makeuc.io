@@ -1,4 +1,4 @@
-script: echo Nothing to do. It's a static site.
+script: echo "Nothing to do. It's a static site."
 
 branches:
   only:
