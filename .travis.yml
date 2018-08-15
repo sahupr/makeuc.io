@@ -10,7 +10,7 @@ deploy:
   region: us-east-2
   on:
     branch: master
-  dot_match: true
+  dot_match: false
   access_key_id:
     secure: P9dq9du+aySVE+GVYkpa4qgVY6cjLkvkFddyx4ImRhaeUICWIczP9rX4bUiJYdomX0jEBXaM+TT4fb/s/7jIubIHLWt9WhyCSOo1OIBgu5jWrkK8BCGoHUms9/tnLz8JmsDbGKVPCt4lGa/Ij7h2yDq0Iu4Zrx/ywdPgmtlrD8HHMFqafoK6aBOQQ/iGfI25B2GCpkCWyLYsSQFO+jEGQ6YkG47f4zWE8Bfw4rixSklhIWjXyqaEoKKdzF8gRqI44OwXEwsn1B6itPROIL3clEiajfiGCz+fRBC4V8/g+lylDuDqMx2rJAaJKWin7ha0eYlfikVdvUcmURob4Uk7E7kaQ+GI6or5aKBNqyUxzcZ4HP2YXNDSkxiaTRJ944bSfN4q8BUJGnPr7vlgV647H1lw7xHLkFCA+z6NUayu6s4HAd/AlvjyGC7IJjTRllyVNouzMPrGk2jQs6h7mT0JOBrnSbRM+oSP5/AgjilmtRsUMQc/PcC+hhOLITLPtUenRXg+CPYEuVcPOlGQtJN6JWHbYSjf5vVz/FZGy2/aSVGN+1HKoh/6EUnjWKjqSbaaKM+H97JJ16jD8OpJcvJIPGNNatF/8wtKLfb/3dmll+ZVfI1Lh3wQ8f1vtHjF7CLG8/NSQnhncpOqP0ij3/ivYMhcYEmuxuBCas5fl27PqZI=
   secret_access_key:
