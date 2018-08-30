@@ -66,13 +66,35 @@ header p {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 0.5em;
+}
+
+.horiz-flex a {
+    display: flex;
+    flex-direction: column;
 }
 
 .horiz-flex .exec-logo {
     height: 4em;
     margin-left: 10px;
     margin-right: 10px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.horiz-flex .sponsor {
+    height: 8em;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-basis: 100%;
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
+.sign-up {
+    margin-top: 20px;
 }
 
 #large-menu {
