@@ -79,7 +79,6 @@ header p {
     height: 4em;
     margin-left: 10px;
     margin-right: 10px;
-    flex-basis: 100%;
     flex-grow: 1;
     flex-shrink: 1;
 }
@@ -88,7 +87,6 @@ header p {
     height: 8em;
     margin-left: 10px;
     margin-right: 10px;
-    flex-basis: 100%;
     flex-grow: 2;
     flex-shrink: 1;
 }
