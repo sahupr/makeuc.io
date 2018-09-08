@@ -73,6 +73,7 @@ header p {
 .horiz-flex a {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .horiz-flex .exec-logo {
@@ -87,8 +88,10 @@ header p {
     height: 8em;
     margin-left: 10px;
     margin-right: 10px;
-    flex-grow: 2;
-    flex-shrink: 1;
+}
+
+.horiz-flex .sponsor-wide {
+    height: 6em;
 }
 
 .sign-up {
