@@ -1,7 +1,7 @@
 /* Override styles for template */
 
 #banner {
-    background-color: #d01d1d;
+    background-color: #211D39;
     background-image: url("/images/cincinnati-skyline.svg");
     background-attachment: fixed;
     background-size: cover;
@@ -31,7 +31,7 @@ ul {
 
 #footer {
     background: none;
-    background-color: #731010;
+    background-color: #211D39;
 }
 
 .footer-subheader {
@@ -135,6 +135,6 @@ header p {
     }
     #large-menu a:hover {
         text-decoration: underline;
-        color: #F64747;
+        color: #211D39;
     }
 }
