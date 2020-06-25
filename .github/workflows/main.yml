@@ -25,4 +25,4 @@ jobs:
     - name: Gatsby Publish
       uses: enriikke/gatsby-gh-pages-action@v2.1.1
       with:
-          access-token: 138187644e6360b2db5706f940b3a6b629d00558
+          access-token: ${{ secrets.GITHUB_TOKEN }}
