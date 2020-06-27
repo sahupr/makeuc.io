@@ -25,7 +25,7 @@ export default () => (
       </div>
     </header>
     <main className="text-gray-900">
-      <section id="features" className="py-20 lg:pb-40 lg:pt-48">
+      <section id="features" className="py-20 lg:pb-40 lg:pt-20">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-semibold">Register</h2>
           <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
@@ -46,12 +46,184 @@ export default () => (
                       placeholder="Full name"
                     />
                   </div>
-                  <div className="md:flex md:items-center">
+                  <div className="mb-4 text-left">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="email"
+                    >
+                      E-mail
+                    </label>
+                    <input
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      name="email"
+                      type="text"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div className="mb-4 text-left">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="university"
+                    >
+                      University
+                    </label>
+                    <input
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      name="university"
+                      type="text"
+                      placeholder="current university"
+                    />
+                  </div>
+                  
+                  <div className="mb-4 text-left">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="degree"
+                    >
+                      Degree
+                    </label>
+                    <select 
+                      className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    >
+                      <option>High school</option>
+                      <option>Bachelors</option>
+                      <option>Masters</option>
+                      <option>PhD.</option>
+                      <option>Associate</option>
+                      <option value='Other'>Other</option>
+                    </select>
+                    <input
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      name="degree"
+                      type="text"
+                      placeholder="Other Degree"
+                      disabled
+                    />
+                  </div>
+                  <div className="mb-4 text-left">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="degree"
+                    >
+                      Major
+                    </label>
+                    <select
+                      className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    >
+                      <option>Undecided</option>
+                      <option>Computer Science</option>
+                      <option>Computer Engineering</option>
+                      <option>Information Technology</option>
+                      <option>Other</option>
+                    </select>
+                    <input
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      name="major"
+                      type="text"
+                      placeholder="Other major"
+                      disabled
+                    />
+                  </div>
+                  <div className="mb-4 text-left">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="graduation"
+                    >
+                      Expected Graduation Year
+                    </label>
+                    <input
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      name="graduation"
+                      type="text"
+                      placeholder="2023"
+                      maxLength="4"
+                    />                    
+                  </div>
+                  <div className="mb-4 text-left">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="hackathonsAttended"
+                    >
+                      Number of Hackathons attended
+              
+                    </label>
+                    <select
+                      className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    >
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>4+</option>
+                    </select>
+                  </div>
+                  <div className="mb-4 text-left">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="resumeURL"
+                    >
+                      Upload resume (optional)
+                    </label>
+                    <input
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      name="resumeURL"
+                      type="file"
+                    />
+                    </div>
+                  <div className="mb-4 text-left">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="ethnicity"
+                    >
+                      Ethnicity (optional)
+                    </label>
+                    <select
+                      className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    >
+                      <option>American Indian or Alaska Native</option>
+                      <option>Asian</option>
+                      <option>Black or African American</option>
+                      <option>Native Hawaiian or Other Pacific Islander</option>
+                      <option>White</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div className="mb-4 text-left">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="gender"
+                    >
+                      Gender (optional)
+                    </label>
+                    <select
+                      className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    >
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div className="mb-4 text-left">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="notes"
+                    >
+                      Notes:
+                    </label>
+                    <input
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      name="notes"
+                      type="text"
+                      placeholder="questions? concerns? let us know!"
+                    />
+                    </div>
+                  <div className="md:items-center py-20 lg:pb-20 lg:pt-10">
                     <button
                       className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                       type="button"
                     >
-                      Sign Up
+                      Register
                     </button>
                   </div>
                 </form>
