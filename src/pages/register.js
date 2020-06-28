@@ -18,7 +18,7 @@ export default () => (
           </div>
         </a>
         <div className="hidden md:block">
-          <Button className="text-sm" href="/">
+          <Button className="text-sm" href="/index">
             Home
           </Button>
         </div>
@@ -51,7 +51,7 @@ export default () => (
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="email"
                     >
-                      E-mail
+                      Email
                     </label>
                     <input
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -65,13 +65,13 @@ export default () => (
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="university"
                     >
-                      University
+                      School
                     </label>
                     <input
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       name="university"
                       type="text"
-                      placeholder="current university"
+                      placeholder="Current School"
                     />
                   </div>
                   
@@ -82,23 +82,21 @@ export default () => (
                     >
                       Degree
                     </label>
-                    <select 
-                      className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    >
-                      <option>High school</option>
-                      <option>Bachelors</option>
-                      <option>Masters</option>
-                      <option>PhD.</option>
-                      <option>Associate</option>
-                      <option value='Other'>Other</option>
-                    </select>
                     <input
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       name="degree"
                       type="text"
-                      placeholder="Other Degree"
-                      disabled
+                      placeholder="Degree"
+                      list="degrees"
                     />
+                      <datalist id="degrees">
+                        <option>High school</option>
+                        <option>Bachelors</option>
+                        <option>Masters</option>
+                        <option>PhD.</option>
+                        <option>Associate</option>
+                        <option value='Other'>Other</option>
+                      </datalist>
                   </div>
                   <div className="mb-4 text-left">
                     <label
@@ -107,22 +105,20 @@ export default () => (
                     >
                       Major
                     </label>
-                    <select
-                      className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    >
+                    <input
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      name="major"
+                      type="text"
+                      placeholder="Major"
+                      list="majors"
+                    />
+                    <datalist id="majors">
                       <option>Undecided</option>
                       <option>Computer Science</option>
                       <option>Computer Engineering</option>
                       <option>Information Technology</option>
                       <option>Other</option>
-                    </select>
-                    <input
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      name="major"
-                      type="text"
-                      placeholder="Other major"
-                      disabled
-                    />
+                    </datalist>
                   </div>
                   <div className="mb-4 text-left">
                     <label
@@ -148,14 +144,15 @@ export default () => (
               
                     </label>
                     <select
-                      className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border w-full rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     >
+                      <option selected>Select and option</option>
                       <option>0</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option>4+</option>
+                      <option>4 or more</option>
                     </select>
                   </div>
                   <div className="mb-4 text-left">
@@ -176,17 +173,19 @@ export default () => (
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="ethnicity"
                     >
-                      Ethnicity (optional)
+                      Ethnicity
                     </label>
                     <select
-                      className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border  w-full rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     >
+                      <option selected>Select and option</option>
                       <option>American Indian or Alaska Native</option>
                       <option>Asian</option>
                       <option>Black or African American</option>
                       <option>Native Hawaiian or Other Pacific Islander</option>
                       <option>White</option>
                       <option>Other</option>
+                      <option>Prefer not to answer</option>
                     </select>
                   </div>
                   <div className="mb-4 text-left">
@@ -194,14 +193,16 @@ export default () => (
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="gender"
                     >
-                      Gender (optional)
+                      Gender
                     </label>
                     <select
-                      className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border w-full rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     >
+                      <option selected>Select and option</option>                      
                       <option>Male</option>
                       <option>Female</option>
                       <option>Other</option>
+                      <option>Prefer not to answer</option>
                     </select>
                   </div>
                   <div className="mb-4 text-left">
@@ -215,7 +216,7 @@ export default () => (
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       name="notes"
                       type="text"
-                      placeholder="questions? concerns? let us know!"
+                      placeholder="Questions or Concerns"
                     />
                     </div>
                   <div className="md:items-center py-20 lg:pb-20 lg:pt-10">
